@@ -11,5 +11,6 @@ spec:
   resources:
     requests:
       storage: 100Mi
+  storageClassName: "local-storage"
   volumeName: "teq-sentry-pv"
 status: {}
