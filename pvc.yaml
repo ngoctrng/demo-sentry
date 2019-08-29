@@ -3,14 +3,14 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: sentry-claim0
-  name: sentry-claim0
+    io.kompose.service: teq-sentry-claim
+  name: teq-sentry-claim
 spec:
   accessModes:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 100Mi
+      storage: 60Gi
   storageClassName: "local-storage"
   volumeName: "teq-sentry-pv"
 status: {}

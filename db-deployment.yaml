@@ -29,10 +29,10 @@ spec:
         resources: {}
         volumeMounts:
         - mountPath: /var/lib/postgresql/data
-          name: db-claim0
+          name: teq-sentry-claim
       restartPolicy: Always
       volumes:
-      - name: db-claim0
+      - name: teq-sentry-claim
         persistentVolumeClaim:
-          claimName: db-claim0
+          claimName: teq-sentry-claim
 status: {}

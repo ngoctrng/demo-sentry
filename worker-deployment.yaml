@@ -25,10 +25,10 @@ spec:
         resources: {}
         volumeMounts:
         - mountPath: /etc/sentry/
-          name: worker-claim0
+          name: teq-sentry-claim
       restartPolicy: Always
       volumes:
-      - name: worker-claim0
+      - name: teq-sentry-claim
         persistentVolumeClaim:
-          claimName: worker-claim0
+          claimName: teq-sentry-claim
 status: {}
