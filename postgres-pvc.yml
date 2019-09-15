@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    io.kompose.service: teq-sentry-postgres-claim
+    app: postgresql
+    heritage: Tiller
+    release: teq-sentry
+  annotations:
+    helm.sh/resource-policy: nil
+  name: teq-sentry-postgres-claim
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi
+  storageClassName: "local-storage"
+  volumeName: "postgres-data-teq-sentry"
+status: {}
